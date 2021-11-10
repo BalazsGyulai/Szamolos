@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #303030;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameDisplay {
+    padding: 10px;
+}
+
+#gameDisplay h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+#gameDisplay p {
+    margin: 10px 0;
+}
+
+#gameDisplay input {
+    width: 70%;
+    height: 50px;
+    padding: 5px 25px;
+    font-size: 1em;
+    outline: none;
+    border: 2px solid #eee;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#gameDisplay input:focus {
+    border-color: #00ff9d;
+    transition: 0.5s;
+}
+
+#gameDisplay button {
+    width: calc(30% - 5px);
+    height: 50px;
+    background-color: #00ff9d;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#gameDisplay button:active {
+    background-color: #00eeff;
+    transition: 0.1s;
+    letter-spacing: 3px;
+}
+
+#gameDisplay ul {
+    margin: 10px 30px;
+    overflow-y: auto;
+}
+
+#gameDisplay ul li {
+    padding: 5px;
+    font-size: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 5px;
+}
+
+#how_to_play {
+    display: none;
+}
+
+#winner {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+}
+
+#winner #texts{
+    width: 500px;
+    color: #f0f0f0;
+}
+
+#winner #texts h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+#winner #texts p{
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+#winner #texts button {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 5px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+#winner #texts button:active {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
