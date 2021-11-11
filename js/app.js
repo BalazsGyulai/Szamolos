@@ -64,10 +64,12 @@ function winner(){
 function newGame(){
     num = Math.floor(Math.random() * 1000);
     winnerDisplay.style.display = "none";
-    db = 0;
+    db = 1;
+    /*
     var child = showTips.lastElementChild;
     while (child) {
        showTips.removeChild(child);
        child = showTips.lastElementChild;
     }
+    */
 }
