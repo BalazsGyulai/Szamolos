@@ -27,6 +27,7 @@ tip.addEventListener("keyup", function(e) {
 
 db = 1
 
+newGamebtn.addEventListener("click", newGame);
 btn.addEventListener("click", checkNumber);
 
 function checkNumber() {
