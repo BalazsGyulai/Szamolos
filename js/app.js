@@ -29,6 +29,7 @@ db = 1
 
 newGamebtn.addEventListener("click", function() {
  newGame();
+    
 });
 btn.addEventListener("click", checkNumber);
 
