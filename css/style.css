@@ -27,8 +27,15 @@ nav {
     padding: 5px;
 }
 
+nav div {
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    height: 40px;
+    border-radius: 7px;
+}
+
 nav a {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,8 +52,14 @@ nav a {
 }
 
 nav a:hover{
+    animation: jello;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+nav a:active{
     letter-spacing: 2px;
-    background: var(--btn-active) ;
+    background: var(--btn-active);
     transition: 0.5s;
 }
 
@@ -102,6 +115,12 @@ nav a:hover{
     outline: none;
     cursor: pointer;
     transition: 0.1s;
+}
+
+#gameDisplay button:hover{
+    animation: jello;
+    animation-duration: 1s;
+    animation-delay: 0s;    
 }
 
 #gameDisplay button:active {
@@ -177,6 +196,12 @@ nav a:hover{
     border-radius: 25px;
     outline: none;
     cursor: pointer;
+}
+
+#winner #texts button:hover{
+    animation: jello;
+    animation-duration: 1s;
+    animation-delay: 0s;    
 }
 
 #winner #texts button:active {

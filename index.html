@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="./img/icon.svg">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>Találd ki a számot!</title>
 </head>
 <body>
     <nav id="about">
-        <a href="http://gyulaibalazs.hu/rolam.php">Rólam</a>
+        <div class="btns">
+            <a href="http://gyulaibalazs.hu/rolam.php">Rólam</a>
+        </div>
     </nav>
 
     <div class="container">
@@ -18,7 +22,7 @@
             <div id="playerArea">
                 <h1>Találd ki a számot!</h1>
                 <p>Gondoltam egy számra 1-1000 között! Találd ki!</p>
-                <input type="number" placeholder="Írj be egy számot 1 és 1000 között" min="1" max="1000" id="tip">
+                <input type="number" placeholder="Írj be egy számot 0 és 1000 között" min="0" max="1000" id="tip">
                 <button id="submit" >Tipp</button>
             </div>
             <ul id="showTips"></ul>

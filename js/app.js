@@ -1,11 +1,12 @@
-tip = document.querySelector("#tip");
-btn = document.querySelector("#submit");
-showTips = document.querySelector("#showTips");
-playerArea = document.querySelector("#playerArea");
-gameDisplay = document.querySelector("#gameDisplay");
-newGamebtn = document.querySelector("#newGame");
-winnerDisplay = document.querySelector("#winner");
-num = 0;
+const tip = document.querySelector("#tip");
+const btn = document.querySelector("#submit");
+const showTips = document.querySelector("#showTips");
+const playerArea = document.querySelector("#playerArea");
+const gameDisplay = document.querySelector("#gameDisplay");
+const newGamebtn = document.querySelector("#newGame");
+const winnerDisplay = document.querySelector("#winner");
+let num = 0;
+
 
 gameDisplay.style.height = window.innerHeight * 0.9 + 'px';
 
@@ -14,8 +15,6 @@ if (window.innerWidth < 500){
 } else{
     gameDisplay.style.width = '500px'
 }
-
-showTips.style.height = gameDisplay.offsetHeight - playerArea.offsetHeight - 35 + 'px';
 
 newGame();
 
