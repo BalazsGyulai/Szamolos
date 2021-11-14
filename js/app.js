@@ -97,7 +97,7 @@ if (window.innerWidth < 500) {
 
 winnerTexts.style.width = gameDisplay.getBoundingClientRect().width + "px";
 
-showTips.style.height = gameDisplay.offsetHeight - playerArea.offsetHeight - 35 + "px";
+showTips.style.height = gameDisplay.getBoundingClientRect().height - playerArea.getBoundingClientRect().height - 35 + "px";
 
 
 // --- responsive part ---
