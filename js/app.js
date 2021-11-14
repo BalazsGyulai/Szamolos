@@ -5,7 +5,9 @@ const playerArea = document.querySelector("#playerArea");
 const gameDisplay = document.querySelector("#gameDisplay");
 const newGamebtn = document.querySelector("#newGame");
 const winnerDisplay = document.querySelector("#winner");
+const winnerTexts = document.querySelector("#texts");
 let num = 0;
+let db = 1;
 
 
 gameDisplay.style.height = window.innerHeight * 0.9 + 'px';
@@ -16,6 +18,11 @@ if (window.innerWidth < 500){
     gameDisplay.style.width = '500px'
 }
 
+
+winnerTexts.style.width = gameDisplay.getBoundingClientRect().width + "px";
+
+showTips.style.height = gameDisplay.offsetHeight - playerArea.offsetHeight - 35 + "px";
+
 newGame();
 
 tip.addEventListener("keyup", function(e) {
@@ -23,8 +30,6 @@ tip.addEventListener("keyup", function(e) {
         checkNumber()
     }
 })
-
-db = 1
 
 newGamebtn.addEventListener("click", function() {
  newGame();
