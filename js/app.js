@@ -46,7 +46,7 @@ function checkNumber() {
         createLi.create();
 
     } else if (tip.value < num) {
-        const createLi = new CreateThing("li", db, tip.value, showTips, ". A szám nagyobb, mint ");
+        const createLi = new CreateThing("li", db, tip.value, showTips, ".) A szám nagyobb, mint ");
 
         createLi.create();
 
