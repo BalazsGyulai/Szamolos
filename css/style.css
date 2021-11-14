@@ -44,7 +44,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: end;
+    justify-content: right;
     height: 45px;
     padding: 5px;
 }
