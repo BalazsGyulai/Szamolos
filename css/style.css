@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +24,7 @@ p {
     text-align: justify;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: 5px;
 }
 
@@ -68,19 +70,34 @@ nav a {
     border-radius: 7px;
     cursor: pointer;
     background: var(--btn-color);
-    transition: 0.5s;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 nav a:hover{
     animation: jello;
+    -o-animation: jello;
+    -moz-animation: jello;
+    -webkit-animation: jello;
     animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
     animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 
 nav a:active{
     letter-spacing: 2px;
     background: var(--btn-active);
-    transition: 0.5s;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 /* --- nav --- */
@@ -120,12 +137,18 @@ nav a:active{
     outline: none;
     border: 2px solid #dadada;
     border-radius: 25px;
-    transition: 0.5s;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 #gameDisplay input:focus {
     border-color: var(--btn-color);
-    transition: 0.5s;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 #gameDisplay button {
@@ -139,18 +162,34 @@ nav a:active{
     color: var(--white-font-color);
     outline: none;
     cursor: pointer;
-    transition: 0.1s;
+    transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+
 }
 
 #gameDisplay button:hover{
     animation: jello;
+    -o-animation: jello;
+    -moz-animation: jello;
+    -webkit-animation: jello;
+    animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
     animation-duration: 1s;
-    animation-delay: 0s;    
+    -o-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 
 #gameDisplay button:active {
     background-color: var(--btn-active);
-    transition: 0.1s;
+    transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
     letter-spacing: 3px;
 }
 
@@ -211,8 +250,17 @@ nav a:active{
 
 #winner #texts button:hover{
     animation: jello;
+    -o-animation: jello;
+    -moz-animation: jello;
+    -webkit-animation: jello;
+    animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
     animation-duration: 1s;
-    animation-delay: 0s;    
+    -o-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 
 #winner #texts button:active {
